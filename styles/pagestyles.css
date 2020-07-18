@@ -1,0 +1,83 @@
+
+
+#header-bar {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   height: 60px;
+   align-items: flex-end;
+}
+
+.header-links {
+    color:rgba(0,0,0,0.87);
+    height: 20px;
+    margin: 8px 0px 0px 0px;
+}
+
+.header-container{
+    display: grid;
+    grid-template-columns: 50px 60px 30px 60px;
+    grid-gap: 6px;
+    font-family: 'Segoe UI', 'Roboto', arial, sans-serif;
+    font-size: 13px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.dot {
+    height: 4px;
+    width: 4px;
+    background-color: rgba(0,0,0,0.58);
+    border-radius: 50%;
+}
+
+.app-widget-graphic {
+    height: 20px;
+    display: grid;
+    grid-template-columns: 6px 6px 6px;
+    grid-template-rows: 6px 6px 6px;
+    grid-template-areas: 
+        "1 2 3"
+        "4 5 6"
+        "7 8 9";
+    margin: 8px 0px 0px 0px;
+}
+
+.dot1 {
+    grid-area: "1";
+}
+.dot2 {
+    grid-area: "2";
+}
+.dot3 {
+    grid-area: "3";
+}
+.dot4 {
+    grid-area: "4";
+}
+.dot5 {
+    grid-area: "5";
+}
+.dot6 {
+    grid-area: "6";
+}
+.dot7 {
+    grid-area: "7";
+}
+.dot8 {
+    grid-area: "8";
+}
+.dot9 {
+    grid-area: "9";
+}
+
+.profile-img {
+       display: block;
+       border-radius: 50%;
+}
