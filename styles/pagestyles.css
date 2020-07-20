@@ -1,11 +1,23 @@
 
 
-#header-bar {
+/* #header-bar {
    display: flex;
    flex-direction: row;
-   justify-content: flex-end;
    height: 60px;
+   justify-content: flex-end;
    align-items: flex-end;
+} */
+
+#header-bar {
+    height: 50px;
+    margin: 15px auto;
+ }
+
+#header-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "left right";
+    
 }
 
 .header-links {
@@ -14,12 +26,27 @@
     margin: 8px 0px 0px 0px;
 }
 
-.header-container{
+.header-text {
+    font-family: arial,sans-serif;
+    font-size: 12.5px;
+}
+
+#header-container-right{
+    grid-area: "right";
     display: grid;
-    grid-template-columns: 50px 60px 30px 60px;
-    grid-gap: 6px;
-    font-family: 'Segoe UI', 'Roboto', arial, sans-serif;
-    font-size: 13px;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 17px;
+    justify-self: end;
+    margin: 0 3%;
+}
+
+#header-container-left {
+    grid-area: "left";
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 17px;
+    justify-self: start;
+    margin: 0 3%;
 }
 
 a:link {
@@ -34,11 +61,11 @@ a:hover {
     height: 4px;
     width: 4px;
     background-color: rgba(0,0,0,0.58);
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
-.app-widget-graphic {
-    height: 20px;
+#app-widget-graphic {
+
     display: grid;
     grid-template-columns: 6px 6px 6px;
     grid-template-rows: 6px 6px 6px;
@@ -46,7 +73,11 @@ a:hover {
         "1 2 3"
         "4 5 6"
         "7 8 9";
-    margin: 8px 0px 0px 0px;
+    margin: 6px 0px 0px 0px;
+}
+
+#app-widget-graphic:hover .dot{
+    background-color: rgba(0, 0, 0);
 }
 
 .dot1 {
@@ -80,4 +111,23 @@ a:hover {
 .profile-img {
        display: block;
        border-radius: 50%;
+}
+
+#logo {
+    text-align: center;
+}
+
+#search-bar-container {
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.search-bar{
+    height: 40px;
+    width: 50px;
+    box-shadow: 0px 0px 5px grey;
+    border-radius: 50px;
 }
