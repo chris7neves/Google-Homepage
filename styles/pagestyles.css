@@ -109,27 +109,41 @@ a:hover {
 }
 
 #search-bar-main{
-    border: none;
+    border: 1px solid  rgb(215, 215, 215);
+    display: flex;
+    flex-direction: row;
     height: 44px;
     width: 500px;
-    box-shadow: 0px 0px 5px rgb(210, 210, 210) ,0px 0px 7px rgb(224, 224, 224);
+    
     grid-area: bar-center;
     border-radius: 50px 50px 50px 50px;
+    align-content: center;
+    justify-content: center;
 }
 
 #search-box {
-    grid-area: bar-center;
     width: 400px;
     justify-self: center;
     border: none;
     color: gray;
     font-family: 'Segoe UI', 'Roboto', arial, sans-serif;
     font-size: 16px;
+    align-self: center;
+}
+
+#search-form{
+    grid-area: bar-center;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
 }
 
 #search-box:focus{
-    outline: none;
-    
+    outline: none;  
+}
+
+#search-bar-main:hover{
+    box-shadow: 0px 0px 4px rgb(210, 210, 210) ,0px 0px 5px rgb(224, 224, 224);
 }
 #search-box:focus::placeholder{
     outline: none;
@@ -146,9 +160,33 @@ a:hover {
 
 #search-mic-icon{
     grid-area: bar-center;
-    height: 18px;
-    width: 11px;
+    height: 20px;
+    width: 13px;
     justify-self: end;
     align-self: center;
     padding-right: 20px;
+}
+
+#search-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+
+}
+/* maybe make the search buttons placed with just margins and things like that. No flex just containers and manual positions*/
+#search-buttons{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+#feeling-lucky{
+    width: 100px;
+    height: 38px;
+}
+
+#google-search{
+    width: 200px;
+    height: 38px;
 }
