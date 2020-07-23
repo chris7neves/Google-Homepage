@@ -1,13 +1,3 @@
-
-
-/* #header-bar {
-   display: flex;
-   flex-direction: row;
-   height: 60px;
-   justify-content: flex-end;
-   align-items: flex-end;
-} */
-
 #header-bar {
     height: 50px;
     margin: 15px auto;
@@ -21,7 +11,7 @@
 }
 
 .header-links {
-    color:rgba(0,0,0,0.87);
+    color:rgba(39, 39, 39, 0.87);
     height: 20px;
     margin: 8px 0px 0px 0px;
 }
@@ -96,11 +86,12 @@ a:hover {
 }
 
 #logo {
+    margin-top: 130px;
     text-align: center;
 }
 
 #search-bar-container {
-    margin: auto auto;
+    margin: 25px auto auto auto;
     display: grid; 
     grid-template-columns: 500px;
     grid-template-areas: "bar-center"; 
@@ -167,26 +158,112 @@ a:hover {
     padding-right: 20px;
 }
 
+#search-mic-icon:hover{
+    cursor: pointer;
+}
+
 #search-button-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    width: 286px;
+    height: 40px;
     padding-top: 30px;
+    margin: auto;
 
 }
-/* maybe make the search buttons placed with just margins and things like that. No flex just containers and manual positions*/
-#search-buttons{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 10px;
+
+#search-left{
+    float: left;
+}
+
+#search-right{
+    float: right;
 }
 
 #feeling-lucky{
-    width: 100px;
+    width: 145px;
     height: 38px;
+    text-align: center;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    color: rgb(105, 105, 105);
+    border-radius: 3px;
+}
+
+#feeling-lucky:hover, #google-search:hover{
+    border: 1px solid rgb(180, 180, 180);
+    color: rgb(40, 40, 40);
+    cursor: pointer;
 }
 
 #google-search{
-    width: 200px;
+    width: 130px;
     height: 38px;
+    text-align: center;
+    border: none;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    background-color: rgb(245, 245, 245);
+    color: rgb(110, 110, 110);
+    border-radius: 3px;
+}
+
+#language-text{
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    text-align: center;
+    color: rgb(40, 40, 40);
+    margin-top: 95px;
+}
+
+#lang-link{
+    color: rgb(32, 32, 175);
+}
+
+#footer-bar-container{
+    width: 100%;
+    height: 85px;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(242, 242, 242);
+
+
+}
+
+#footer-top{
+    height: 50%;
+    border: 1px solid  rgb(230, 230, 230);
+}
+
+#footer-bot{
+    height: 50%;
+
+}
+
+#footer-country{
+    line-height: 43px;
+    padding-left: 30px;
+    color: rgb(130, 120, 120);
+    font-family: arial,sans-serif;
+    font-size: 15px;
+
+}
+
+#footer-text1{
+    float: left;
+    padding-left: 30px;
+    line-height: 42.5px;
+    color: rgb(100, 100, 100);
+    font-family: arial,sans-serif;
+    font-size: 14px;
+
+}
+
+#footer-text2{
+    float: right;
+    padding-right: 30px;
+    line-height: 42.5px;
+    color: rgb(100, 100, 100);
+    font-family: arial,sans-serif;
+    font-size: 14px;
 }
